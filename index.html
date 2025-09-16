@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Manoj Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="loader-inner"></div>
+      </div>
+      <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+      <div class="nav-container">
+        <h1 class="logo">Manoj Kumar</h1>
+        <nav class="desktop-nav">
+          <a href="#home" class="nav-link active" data-section="home">Home</a>
+          <a href="#about" class="nav-link" data-section="about">About</a>
+          <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          <a href="#education" class="nav-link" data-section="education">Education</a>
+          <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-content">
+        <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+        <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+        <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+        <a href="#education" class="mobile-nav-link" data-section="education">Education</a>
+        <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+      <div class="floating-element" style="top: 10%; left: 10%;"></div>
+      <div class="floating-element" style="top: 20%; right: 15%;"></div>
+      <div class="floating-element" style="bottom: 30%; left: 20%;"></div>
+      <div class="floating-element" style="bottom: 10%; right: 10%;"></div>
+    </div>
+
+    <div class="container">
+      <!-- Home Section -->
+      <section id="home" class="section">
+        <div class="home-content">
+          <div class="home-left">
+            <div class="greeting">
+              <span class="wave">👋</span>
+              <h2>Hello, I'm</h2>
+            </div>
+            <h1 class="name-animation">Manoj Kumar</h1>
+            <div class="role-container">
+              <span class="role-label">I'm a </span>
+              <span class="typed-text" id="typedText"></span>
+              <span class="cursor" id="cursor">|</span>
+            </div>
+            <p class="intro-text">Passionate about creating innovative solutions and bringing ideas to life through code.</p>
+            <div class="cta-buttons">
+              <button class="btn-primary" onclick="scrollToSection('projects')">
+                <i class="fas fa-code"></i> View My Work
+              </button>
+              <button class="btn-secondary" onclick="scrollToSection('contact')">
+                <i class="fas fa-envelope"></i> Get In Touch
+              </button>
+            </div>
+          </div>
+
+<div class="profile-wrapper">
+  <div class="profile-container">
+    <div class="profile-circle">
+      <img src="IMG_20250914_175205_656.webp" alt="Manoj Kumar" class="profile-img" >
+    </div>
+    <div class="status-indicator">
+      <span class="status-dot"></span>
+      Available for opportunities
+    </div>
+  </div>
+</div>
+
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-subtitle">Get to know me better</div>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              Passionate software developer eager to explore and contribute to innovative tech solutions. 
+              I believe in writing clean, efficient code and creating user-friendly applications that make a difference.
+            </p>
+            
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <strong>Languages:</strong>
+                  <span>Telugu, Tamil, English</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-heart"></i>
+                <div>
+                  <strong>Interests:</strong>
+                  <span>Music, Cricket, Technology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="specialization-grid">
+          <div class="specialization-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="spec-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4>Web Development</h4>
+            <p>Creating responsive and dynamic web applications using modern technologies and best practices.</p>
+          </div>
+          
+          <div class="specialization-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="spec-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h4>UI/UX Design</h4>
+            <p>Crafting beautiful and intuitive user interfaces that provide exceptional user experiences.</p>
+          </div>
+          
+          <div class="specialization-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="spec-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4>Mobile-First</h4>
+            <p>Building responsive applications optimized for all devices and screen sizes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="section-subtitle">Technologies I work with</div>
+        </div>
+        
+        <div class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-level">Expert</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">CSS3</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-node-js fa-2x"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Nodejs</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">React</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="specialization-note">
+          <p><strong>Specialization:</strong> Frontend Development & UI/UX Design</p>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Education Journey</h2>
+          <div class="section-subtitle">My academic background</div>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-card">
+                  <div class="timeline-date">2024 - 2026</div>
+                  <h4>Master of Computer Applications</h4>
+                  <p class="institution">Adhiyamaan College of Engineering</p>
+                  <span class="status pursuing">Pursuing</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-card">
+                  <div class="timeline-date">2021 - 2024</div>
+                  <h4>B.Sc Computer Science</h4>
+                  <p class="institution">KMG College of Arts and Science</p>
+                  <span class="status completed">8.4 CGPA</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-card">
+                  <div class="timeline-date">2021</div>
+                  <h4>Higher Secondary</h4>
+                  <p class="institution">Thiruvalluvar Higher Secondary School</p>
+                  <span class="status completed">82.5%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-card">
+                  <div class="timeline-date">2019</div>
+                  <h4>Secondary School</h4>
+                  <p class="institution">Thiruvalluvar Higher Secondary School</p>
+                  <span class="status completed">76.4%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-subtitle">Some of my recent work</div>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg" alt="Car Rental System">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>SQL</span>
+              </div>
+              <h4>Car Rental System</h4>
+              <p>A comprehensive system for managing car rentals, featuring an intuitive booking interface and admin dashboard with real-time availability tracking.</p>
+            </div>
+          </div>
+          
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/7821517/pexels-photo-7821517.jpeg" alt="Expense Tracker">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h4>Income & Expense Tracker</h4>
+              <p>Smart financial management tool with detailed analytics, customizable reporting features, and budget planning capabilities.</p>
+            </div>
+          </div>
+          
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg" alt="Weather App">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech">
+                <span>React</span>
+                <span>API</span>
+              </div>
+              <h4>Weather Application</h4>
+              <p>Modern weather app featuring real-time updates, location-based forecasts, interactive maps, and detailed weather analytics.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-subtitle">Let's connect and collaborate</div>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:kmanojkumar2874@gmail.com">kmanojkumar2874@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <span>+91 8144193599</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Hosur</h4>
+              <span>Tamil Nadu, India</span>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/manoj-kumar-28k" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/ManojKumar-k28" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-message">
+          <div class="message-card">
+            <h3>Ready to collaborate?</h3>
+            <p>I'm always excited to work on new projects and learn from experienced developers. Whether it's an internship opportunity, a collaborative project, or just a chat about technology, I'd love to hear from you!</p>
+            <div class="contact-cta">
+              <a href="mailto:kmanojkumar2874@gmail.com" class="btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Send Email
+              </a>
+              <a href="https://www.linkedin.com/in/manoj-kumar-28k" target="_blank" class="btn-secondary">
+                <i class="fab fa-linkedin"></i>
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <center>   <div class="footer-content">
+       <p>&copy; 2025 Manoj Kumar | Crafted with passion in India</p>
+      </div></center>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
